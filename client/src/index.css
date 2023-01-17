@@ -1,0 +1,63 @@
+body {
+    background-color: #f7f8fc;
+    transition: 0.4s;
+}
+
+.dark {
+    background-color: #0f0f0f;
+    transition: 0.3s;
+  }
+  .dark #color8 {
+    color: #bdc1c6;
+  }
+  .dark h1 {
+    color: #bdc1c6;
+  }
+
+  .dark div.MuiPaper-root {
+    background-color: #0f0f0f;
+  }
+  .dark div.MuiPaper-root p {
+    color: lightgray;
+  }
+  .dark div.MuiPaper-root h5 {
+    color: lightgray;
+  }
+
+  .dark h6 {
+    color: lightgray;
+  }
+
+  .dark h2 {
+    color: lightgray;
+  }
+
+  .dark a {
+    color: lightgray;
+  }
+
+  .dark svg {
+    color: lightgray;
+  }
+
+  .dark header {
+    background-color: #28282B;
+  }
+
+  .dark form {
+     background-color: #28282B;
+     border-radius: 10px;
+     padding: 10px
+  }
+
+  .dark input #file-upload-button {
+    background-color: purple;
+  }
+
+  .dark span.MuiButton-label {
+    color: white;
+  }
+
+  .dark input  {
+    color: white;
+  }
