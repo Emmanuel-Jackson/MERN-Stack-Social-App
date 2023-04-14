@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, CircularProgress, Typography } from '@material-ui/core';
+import { Grid, CircularProgress, Typography, Button } from '@material-ui/core';
 import CloudOffIcon from '@mui/icons-material/CloudOff';
 import { useSelector } from 'react-redux';
 import Post from './Post/Post';
@@ -23,7 +23,7 @@ const Posts = ({ setCurrentId }) => {
   )
 
   return (
-    isLoading ? <CircularProgress /> : (
+    isLoading ? <Button><CircularProgress />&nbsp; &nbsp; May take a while. Loading posts please wait...</Button> : (
       <Grid className={classes.container} container alignItems="stretch" spacing={3}>
         {posts?.map((post) => (
           <Grid key={post._id} item xs={12} sm={12} md={6} lg={4}>

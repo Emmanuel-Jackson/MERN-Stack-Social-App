@@ -52,6 +52,7 @@ const Navbar = () => {
         ) : (
           <>
           <DarkMode />
+          &nbsp; &nbsp; &nbsp;
           <Button component={Link} to="/auth" variant="contained" color="primary">Sign Up or Login</Button>
           </>
         )}
