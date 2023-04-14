@@ -14,9 +14,20 @@ body {
     color: #bdc1c6;
   }
 
-  .dark div.MuiPaper-root {
-    background-color: #0f0f0f;
+  .dark div.MuiPaper-root form {
+    background-color: #28282B;
   }
+  .dark div.MuiPaper-root {
+    background-color: #28282B;
+  }
+
+  .dark label{
+    color: white;
+  }
+  .dark .MuiInputBase-root {
+    color: white;
+  }
+
   .dark div.MuiPaper-root p {
     color: lightgray;
   }
