@@ -73,17 +73,23 @@ const Auth = () => {
              </>
            )}
            <Input name="email" label="Email Address" handleChange={handleChange} type="email" />
-           <Input name="password" label="Password" handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
+           <Input name="password" label="Password" handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />   
+             
          </Grid>
          {!isSignup && (
            <Typography color="secondary" variant="subtitle2" className={{ fontFamily: '9px' }}>
-             **If it didn't sign you in, your password or username is invalid. Please try again.**
+             **If it didn't sign you in, your password or username is invalid and user doesn't exists. Please try again.**
+           </Typography>
+         )}
+          {isSignup && (
+           <Typography color="secondary" variant="subtitle2" className={{ fontFamily: '9px' }}>
+             **If it didn't sign you in, you already have an account and user does exist. Please try again.**
            </Typography>
          )}
          <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
            {isLoading ? <CircularProgress color='black' size={24} /> : isSignup ? 'Sign Up' : 'Sign In'}
          </Button>
-         <Grid container justify="flex-end">
+         <Grid container justifyContent="flex-end">
            <Grid item>
              <Button onClick={switchMode}>
                {isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign Up"}
