@@ -11,8 +11,7 @@ const Posts = ({ setCurrentId }) => {
 
   if (!posts.length && !isLoading) {
     return (
-      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
-        <CloudOffIcon style={{ fontSize: "90px", marginBottom: "20px" }} />
+      <div style={{ color: "gray", position: "absolute", top: "50%", left: "38%", transform: "translate(-50%, -50%)" }}>
         <Typography align="center" variant="h4">No results found for your search...</Typography>
         <Typography align="left" variant="subtitle1">Suggestions:</Typography>
         <ul align="left">
@@ -27,12 +26,10 @@ const Posts = ({ setCurrentId }) => {
   return (
     <div style={{ position: "relative" }}>
       {isLoading && (
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -5%)", textAlign: "center" }}>
           <CircularProgress color="primary" />
+          <Typography align="center" variant="body1" color="textSecondary" style={{ color: "gray", marginTop: "10px" }}>Loading posts, please wait...</Typography>
         </div>
-      )}
-      {isLoading && (
-        <Typography align="center" variant="body1" color="textSecondary" style={{ color: "gray", marginTop: "10px" }}>Loading posts, please wait...</Typography>
       )}
       {!isLoading && (
         <Grid className={classes.container} container alignItems="stretch" spacing={3}>
