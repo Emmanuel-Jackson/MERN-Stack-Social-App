@@ -1,4 +1,3 @@
-
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
@@ -7,13 +6,11 @@ export default makeStyles((theme) => ({
     marginBottom: '1rem',
     display: 'flex',
     padding: '16px',
-    width: "24rem"
   },
   pagination: {
     borderRadius: 4,
     marginTop: '1rem',
     padding: '16px',
-    width: '22rem'
   },
   gridContainer: {
     [theme.breakpoints.down('xs')]: {

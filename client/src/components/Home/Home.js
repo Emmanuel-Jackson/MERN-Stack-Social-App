@@ -60,19 +60,21 @@ const Home = () => {
                 value={tags}
                 onAdd={(chip) => handleAddChip(chip)}
                 onDelete={(chip) => handleDeleteChip(chip)}
-                InputLabelProps={{style: {fontSize: 14}}}
+                InputLabelProps={{style: {fontSize: 16}}}
                 InputProps={{ style: { fontSize: 14 }}}
-                label="Search for tags (e.g. traveling 'enter', add more)"
+                label="Search for tags"
                 variant="outlined"
               />
               <Button onClick={searchPost} className={classes.searchButton} variant="contained" color="primary">Search</Button>
             </AppBar>
+            <div className={classes.formContainer}>
             <Form currentId={currentId} setCurrentId={setCurrentId} />
             {(!searchQuery && !tags.length) && (
               <Paper className={classes.pagination} elevation={1}>
                 <Pagination page={page} />
               </Paper>
             )}
+            </div>
           </Grid>
         </Grid>
       </Container>

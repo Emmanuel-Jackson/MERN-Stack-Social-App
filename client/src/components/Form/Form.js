@@ -66,7 +66,7 @@ const Form = ({ currentId, setCurrentId }) => {
           <ChipInput
             name="tags"
             variant="outlined"
-            label="Add hashtags (Dont't add #, snapmoment automatically add them for you, and press enter to add more hastags)"
+            label="Add hashtags (Dont't add #, instead press enter)"
             InputLabelProps={{style: {fontSize: 12.2}}} // font size of input label
             fullWidth
             value={postData.tags}
